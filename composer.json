@@ -1,5 +1,5 @@
 {
-    "name": "laralabs/get-address-io",
+    "name": "salmanshahid527/get-address-io",
     "description": "Laravel package for getAddress.io",
     "license": "MIT",
     "authors": [
@@ -20,8 +20,8 @@
     },
     "autoload": {
       "psr-4": {
-        "Laralabs\\GetAddress\\": "src/",
-        "Laralabs\\GetAddress\\Tests\\": "tests/"
+        "Salmanshahid527\\GetAddress\\": "src/",
+        "Salmanshahid527\\GetAddress\\Tests\\": "tests/"
       },
       "files": [
         "src/Helpers/functions.php"
@@ -30,10 +30,10 @@
     "extra": {
       "laravel": {
         "providers": [
-          "Laralabs\\GetAddress\\GetAddressServiceProvider"
+          "Salmanshahid527\\GetAddress\\GetAddressServiceProvider"
         ],
         "aliases": {
-          "GetAddress": "Laralabs\\GetAddress\\Facades\\GetAddress"
+          "GetAddress": "Salmanshahid527\\GetAddress\\Facades\\GetAddress"
         }
       }
     }
