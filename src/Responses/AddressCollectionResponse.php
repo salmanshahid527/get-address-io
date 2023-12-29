@@ -40,7 +40,7 @@ class AddressCollectionResponse
      * @param float  $longitude
      * @param array  $addresses
      */
-    public function __construct($postcode, $latitude, $longitude, array $addresses = [])
+    public function __construct(?string $postcode, ?float $latitude, ?float $longitude, array $addresses = [])
     {
         $this->postcode = $postcode;
         $this->latitude = $latitude;
@@ -99,7 +99,7 @@ class AddressCollectionResponse
             'postcode'  => $this->postcode,
             'latitude'  => $this->latitude,
             'longitude' => $this->longitude,
-            'addresses' => array_map(function ($address) {
+            'addresses' => array_map(static function ($address) {
                 if ($address instanceof Address) {
                     return $address->toString(true);
                 }
